@@ -1,11 +1,27 @@
-# Start your own "Can of Books" App
+# Can of Books
 
-This repository has starter code to begin work on creating your own online bookshelf.
+**Author**: Abdullah Nazzal
+**Version**: 1.0.0 
 
-## What can books do?
-
+## Overview
 Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. Build out this code base to create an web app to track what books have impacted you, and what's recommended to read next.
 
-## Use this template
+## Getting Started
 
-Clone this repo to your own account with the green "Use this template" button. Then, add any collaborators. Now you are ready to start adding features! Deploy your site to let the world know which books have had the greatest impact on you, and what's recommended. Enjoy!
+## Architecture
+React, JS
+## Change Log
+
+
+## Credit and Collaborations
+
+
+Name of feature: Use the Auth0 identity service to allow users to authenticate their identity for your application. 
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 1:20
+
+Finish time: 4:00
+
+Actual time needed to complete: 2:40 hours
