@@ -1,27 +1,25 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Card from 'react-bootstrap/Card';
-// import Modal from 'react-bootstrap/Modal'
 import { Modal, Button } from 'react-bootstrap';
-class BookFormModal extends React.Component {
+class UpdateModal extends React.Component {
     modalClose = () => {
-        this.props.modalClose()
+        this.props.modalUpdateClose()
     }
     render() {
         return (
             <>
-                {console.log("Open", this.props.stateOfModal)}
-                <Modal show={this.props.stateOfModal} onHide={this.modalClose}>
+                {console.log("Open", this.props.stateOfUpdateModal)}
+                <Modal show={this.props.stateOfUpdateModal} onHide={this.modalClose}>
                     <Modal.Header>
                         <Modal.Title>Title</Modal.Title>
                         {/* this.props.title */}
                     </Modal.Header>
                     <Modal.Body>
-                        <form onSubmit={this.props.addBooks}>
-                        <input type="text" name="title" placeholder="title" />
-                        <input type="text" name="description" placeholder="description" />
-                        <input type="text" name="email" placeholder="email" />
-                        <input type="submit" value="Add" />
+                        <form onSubmit={this.props.updateBook}>
+                        <input type="text" name="title" defaultValue={this.props.selectedBook.title}  />
+                        <input type="text" name="description" defaultValue={this.props.selectedBook.description} />
+                        {/* <input type="text" name="email" placeholder="email" /> */}
+                        <input type="submit" value="Update" />
                          </form> 
                         {/* {this.props.description} */}
 
@@ -39,4 +37,4 @@ class BookFormModal extends React.Component {
     }
 }
 
-export default BookFormModal;
+export default UpdateModal;

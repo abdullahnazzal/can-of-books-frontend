@@ -7,7 +7,9 @@ class BookCard extends React.Component {
     deleteBookFunc=()=>{
         this.props.deleteBook(this.props.bookInfo._id);
     }
-
+    UpdateBookFunc=()=>{
+        this.props.updateBook(this.props.bookInfo._id);
+    }
     render() {
         return (
             <>
@@ -19,6 +21,9 @@ class BookCard extends React.Component {
                         </Card.Text>
                         <Button variant="secondary" onClick={this.deleteBookFunc}>
                             Delete
+                        </Button>
+                        <Button variant="secondary" onClick={this.UpdateBookFunc}>
+                            Update
                         </Button>
                     </Card.Body>
                 </Card>
